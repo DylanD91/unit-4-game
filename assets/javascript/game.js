@@ -69,68 +69,42 @@ function newCrystals(){
 		for(var i=19; i<=120; i++){
 			numberList.push(i);
 		}
+	//selected number to reach
 	numberToReach = numberList[Math.floor(Math.random() * numberList.length)];
-	console.log(numberToReach); //selected number to reach
+	console.log(numberToReach); 
 
 	//this places the numberToReach on the html page
 	$('#randomNumber').text(numberToReach);
-
+    // assigns random number to crystal values
 	redCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
 	$('#redCrystalValue').text(redCrystalValue);
 
 		console.log(redCrystalValue);
-
+    // assigns random number to crystal values
 	blueCrystalValue = crystalList[Math.floor(Math.random() * 
 		crystalList.length)];
 	$('#blueCrystalValue').text(blueCrystalValue);
 		console.log(blueCrystalValue);
-
+// assigns random number to crystal values
 	greenCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
 	$('#greenCrystalValue').text(greenCrystalValue);
 		console.log(greenCrystalValue);
-
+// assigns random number to crystal values
 	yellowCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
 	$('#yellowCrystalValue').text(yellowCrystalValue);
 		console.log(yellowCrystalValue);
 }
-
+//this sets the counter to 0;
+// counter = 0;
 function startGame(){
 	counter = 0;
-	//this creates the array of numbers to be used to pick the numberToReach
-	// numberList = [];
-	// 	for(var i=19; i<=120; i++){
-	// 		numberList.push(i);
-	// 	}
-	// numberToReach = numberList[Math.floor(Math.random() * numberList.length)];
-	// console.log(numberToReach); //selected number to reach
-
-	//this places the numberToReach on the html page
+   //this places the numberToReach on the html page
 	$('#randomNumber').text(numberToReach);
 	
 
 	//this assigns the counter to the userTotalScore on the html page
 	$('#userTotalScore').text(0);
 
-	// assigns random number to crystal values
-	// redCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
-	// $('#redCrystalValue').text(redCrystalValue);
-
-	// 	console.log(redCrystalValue);
-
-	// blueCrystalValue = crystalList[Math.floor(Math.random() * 
-	// 	crystalList.length)];
-	// $('#blueCrystalValue').text(blueCrystalValue);
-	// 	console.log(blueCrystalValue);
-
-	// greenCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
-	// $('#greenCrystalValue').text(greenCrystalValue);
-	// 	console.log(greenCrystalValue);
-
-	// yellowCrystalValue = crystalList[Math.floor(Math.random() * crystalList.length)];
-	// $('#yellowCrystalValue').text(yellowCrystalValue);
-	// 	console.log(yellowCrystalValue);
-	//this sets the counter to 0;
-	// counter = 0;
 
 	//this puts the winCounter, lossCounter & counter values in their correct locations on the page
 	$('#wins').text(winCounter);
