@@ -111,7 +111,7 @@ function startGame(){
 	$('#losses').text(lossCounter);
 	$('#userTotalScore').text(counter);
 }
-	//click events for each crystal
+	//This is where the click events for each crystal
 
 	$('#redCrystal').on('click', function () {
       counter = counter + redCrystalValue;
