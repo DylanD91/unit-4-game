@@ -1,0 +1,105 @@
+<!-- You always have to start your HTML files like this! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Crystal Collector</title>
+	<!-- I linked all of my CSS files, as well as Bootstrap, and Google Fonts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Krona+One|Patrick+Hand+SC" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- I wanted to have a Larger title, and I am starting to really like Bootstrap..so I wanted to create a jumbotron for practice -->
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="h1"> Crystal Collector! </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-body"  id="howToPlay">
+						<h1 class="h1">How to Play...
+						<br>
+						<small id="info"> 
+							<p class="lead"> You will be given a random number at the start of the game.
+							<br>
+							There are four crystals below that all have hidden values. by clicking on a crystal you will add a specific amount of points to your total score.
+							<br>
+							You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.
+							<br>
+							The value of the crystals will change every time the game restarts.
+							</p>
+						</small>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- In this section I am declaring what column to put the "Number to Reach" panel -->
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel">
+					<div class="panel-heading" class="topHeading">
+						<h2 class="panel-title"> <strong> Number to Reach </strong>
+						</h2>
+					</div>
+					<div class="panel-body">
+						<p> <span id="randomNumber"></span></p>
+					</div>
+				</div>
+			</div>
+			<!-- I am doing the same here, but this time for the Win/Lose panels -->
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="row">
+						<div class="col-md-6" id="winLoseAlert">
+							<div class="panel-body"> 
+								<p><strong>Wins: <br></strong></p>
+								<p id="wins">  0  </p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="panel-body">
+								<p><strong>Losses: <br></strong></p>
+								<p id="losses"> 0  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- I did the same for of paneling for the "Your Total Score is:" -->
+			<div class="col-md-4">
+				<div class="panel">
+					<div class="panel-heading" class="topHeading">
+						<h2 class="panel-title"> <strong>Your Total Score is: </strong></h2>
+					</div>
+					<div class="panel-body">
+						<p> <span id="userTotalScore"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- This is where I am declaring that I want all of the crystal images in the same Panel which is divided into
+		four sections, since I have 4 images, and the total is 12 -->
+		<div class="row">
+			<div class="panel-body" id="crystals">
+
+				<div class="col-md-3" id="redCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-3" id="blueCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-3" id="greenCrystal" class="crystals" class="center-block">
+				</div>
+				<div class="col-md-3" id="yellowCrystal" class="crystals" class="center-block">
+				</div>
+			</div>
+		</div>
+		<!-- This is where I link javascript and my game.js file -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* This is my favorite section so far: This is where you get to make everything look pretty, apperance, placement,  */
+body {
+	background-image: url("../images/space_texture_by_extince.jpg");
+}
+.jumbotron {
+	background-color: transparent;
+	color:#cfedfc;
+	text-align: center;
+	font-family: 'Krona One', sans-serif;
+}
+#howToPlay {
+	background-color: #eaeaea;
+	text-align: center;
+	font-family: 'Patrick Hand SC', cursive;
+}
+#info {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 10;
+}
+
+.crystalHolder {
+	background-color: none;
+}
+
+.crystalImage {
+	display: inline-block;
+	width: 175px;
+	height: 175px;
+	margin-bottom: 25px;
+	background-color: transparent;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+p, h2, strong, span{
+	text-align: center;
+	font-family: 'Patrick Hand SC', cursive;
+}
+p, strong {
+	font-size: 20px;
+	font-family: 'Patrick Hand SC', cursive;
+}
+#wins, #losses {
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Patrick Hand SC', cursive;
+}
+#winLoseAlert {
+	border-right: 5px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	font-family: 'Patrick Hand SC', cursive;
+}
+.panel-heading {
+	background-color:#cfedfc;
+	border-color: #000000;
+}
+
+
+
