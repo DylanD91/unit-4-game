@@ -3,7 +3,7 @@
 //=================I used different images of crystals, but still called them the colors of the crystals you used in the assignment example=========================//
 var numberList = []; //list of numbers to get numberToReach from
 var numberToReach = "";
-// var crystalList = [];
+// crystalList = [];
 var redCrystal = "";
 var blueCrystal = "";
 var greenCrystal = "";
