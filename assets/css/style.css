@@ -13,12 +13,6 @@ body {
 	text-align: center;
 	font-family: 'Patrick Hand SC', cursive;
 }
-#info {
-	color: #000000;
-	font-size: 16px;
-	font-weight: 10;
-}
-
 .crystalHolder {
 	background-color: none;
 }
@@ -60,5 +54,10 @@ p, strong {
 	border-color: #000000;
 }
 
+#info {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 10;
+}
 
 

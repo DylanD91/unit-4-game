@@ -25,6 +25,9 @@ var lossCounter = 0;
 
 
 //this creates the objects of the crystals
+// **personal note: ".attr" = I am setting the attribute value
+// **personal note: ".addClass" = adds a class name to a class attribute
+// **personal note: ".append" = the content added at the end
 function createCrystals(){
 
 	var redCrystal = $('<img>');
@@ -70,6 +73,8 @@ function newCrystals(){
 			numberList.push(i);
 		}
 	//selected number to reach
+	// **personal note for myself to understand better: Math.floor, means that it will round the integar downwards
+
 	numberToReach = numberList[Math.floor(Math.random() * numberList.length)];
 	console.log(numberToReach); 
 
@@ -111,7 +116,7 @@ function startGame(){
 	$('#losses').text(lossCounter);
 	$('#userTotalScore').text(counter);
 }
-	//This is where the click events for each crystal
+	//This is where the click events for each crystal are, as well as the messages for my alerts
 
 	$('#redCrystal').on('click', function () {
       counter = counter + redCrystalValue;
